@@ -16,6 +16,8 @@
     
     function verificar_login($user,$password,&$result)
     {
+        $con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS);
+        mysqli_select_db($con,DB_NAME);
         $sql = "SELECT * FROM usuarios WHERE usuario = '$user' and clave = '$password'";
         $rec = mysqli_query($con,$sql);
         $count = 0;
