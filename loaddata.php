@@ -1,7 +1,7 @@
 ﻿<?php
 	//se hace la conexión ha la base de datos
-	mysql_connect("localhost","hanselit_admin","") or die("Error");
-	mysql_select_db("hanselit_mysql") or die("Error en la BD");
+	$con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS) or die("Error");
+	mysqli_select_db($con,DB_NAME) or die("Error en la BD");
 
 	// Se lee el archivo xml desde la ruta FTP
 	$fileXML = simplexml_load_file("pedidos.xml") or die("No se encuentra el archivo");
