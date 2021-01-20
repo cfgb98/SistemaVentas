@@ -13,7 +13,7 @@
     session_start();
     include_once "conexion.php";
      
-    //BEGINNING FUNCTION TO VERIFY LOGIN
+    
     function verificar_login($user,$password,&$result)
     {
         $sql = "SELECT * FROM usuarios WHERE usuario = '$user' and clave = '$password'";
@@ -33,7 +33,7 @@
             return 0;
         }
     }
-    //ENDING FUNCTION TO VERIFY LOGIN
+ 
     
     if(!isset($_SESSION['userid']))
     {
@@ -51,30 +51,11 @@
             }
             else
             {
-		echo '<script language="javascript">alert("Su usuario es incorrecto, intente nuevamente.");</script>'; 
+		echo '<script>alert("Su usuario es incorrecto, intente nuevamente.");</script>'; 
             }
         }
  
         ?>
-    <!-- CPANEL WINDOW BUILDER-->
-    <!--div id="cPanel-login">
-        <div id="cPanel-title">
-            <p>CONTROL PANEL</p>
-        </div>
-        <!-- LOGIN FORM BUILDER >
-        <div id="cPanel-content">
-            <form action="" method="POST" class="login">
-                
-                    <p class="cPanel-data">No. Empleado: </p><input class="cPanel-input" name="user" type="text" placeholder="Número de empleado">
-                
-                
-                    <p class="cPanel-data">Contraseña: </p><input class="cPanel-input" name="password" type="password" placeholder="Contraseña">
-                
-                    <div class="cPanel-link"><a href="signin.php" >Registrarse</a></div>
-                <div>
-                    <input class="cPanel-btn"name="login" type="submit" value="ENTRAR">
-                </div>
-            </form--> 
 	<div id="wrapper">	
 		<form name="login-form" class="login-form" action="" method="post">
 		<div class="header">

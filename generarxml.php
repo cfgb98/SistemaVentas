@@ -51,7 +51,7 @@ if($xml->save("pedidos.xml")){
   echo '<script>alert("Se creado exitosamente el archivo xml.");</script>'; 
   echo '<script>window.location="cargarinfo.php";</script>'; 
   
-  //header('location: cargarinfo.php'); 
+  
 }else{
   echo '<script>alert("No se pudo guardar el archivo xml.");</script>'; 
 }
