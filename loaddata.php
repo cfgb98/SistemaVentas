@@ -1,4 +1,6 @@
 ﻿<?php
+    include_once "conexion.php";
+
 	//se hace la conexión ha la base de datos
 	$con = mysqli_connect(DB_SERVER,DB_USER,DB_PASS) or die("Error");
 	mysqli_select_db($con,DB_NAME) or die("Error en la BD");
@@ -15,7 +17,7 @@
 			'".$valor->idproducto."','".$valor->producto."',
 
 			'".$valor->cantidad."','".$valor->importe."');";
-		mysql_query($query) or die("Error en el query");
+		mysqli_query($con,$query) or die("Error en el query");
 
 	}
 echo '<script>alert("Se han insertado los datos exitosamente en la base de datos.");</script>'; 
