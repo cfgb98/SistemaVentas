@@ -21,9 +21,6 @@
 		<div class="footer">
 		<input type="submit" name="login" value="Cargar Nueva Información" class="button" />
 		</div>
-	
 		</form>
-		<!--input type="submit" name="generar" action="generarxml.php" value="Generar XML" class="generate" /-->
-
 </body>
 </html> 

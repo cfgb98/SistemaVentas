@@ -1,6 +1,6 @@
 ﻿<?php
 	//se hace la conexión ha la base de datos
-	mysql_connect("localhost","hanselit_admin","123456") or die("Error");
+	mysql_connect("localhost","hanselit_admin","") or die("Error");
 	mysql_select_db("hanselit_mysql") or die("Error en la BD");
 
 	// Se lee el archivo xml desde la ruta FTP
@@ -16,9 +16,9 @@
 
 			'".$valor->cantidad."','".$valor->importe."');";
 		mysql_query($query) or die("Error en el query");
-//
+
 	}
-echo '<script language="javascript">alert("Se han insertado los datos exitosamente en la base de datos.");</script>'; 
-echo '<script language="javascript">window.location="newone.php";</script>'; 
+echo '<script>alert("Se han insertado los datos exitosamente en la base de datos.");</script>'; 
+echo '<script>window.location="newone.php";</script>'; 
 
 ?>

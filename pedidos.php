@@ -7,8 +7,6 @@
 		 <title>Pedidos de Venta</title>
 	
     </head>
-
-
 <body>
   <a id="a" href="logout.php">Salir</a>
   
@@ -29,9 +27,6 @@
 		<div class="footer">
 		<input type="submit" name="login" value="Generar XML" class="button" />
 		</div>
-	
 		</form>
-		<!--input type="submit" name="generar" action="generarxml.php" value="Generar XML" class="generate" /-->
-
 </body>
 </html> 
