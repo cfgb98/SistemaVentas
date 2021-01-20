@@ -17,9 +17,9 @@
     function verificar_login($user,$password,&$result)
     {
         $sql = "SELECT * FROM usuarios WHERE usuario = '$user' and clave = '$password'";
-        $rec = mysql_query($sql);
+        $rec = mysqli_query($con,$sql);
         $count = 0;
-        while($row = mysql_fetch_object($rec))
+        while($row = mysqli_fetch_object($rec))
         {
             $count++;
             $result = $row;
