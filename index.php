@@ -5,7 +5,7 @@
 		<title>Pedidos de Venta</title>
 		 <link rel="stylesheet" type="text/css" href="style.css" />
 		
-
+<script src="main.js"></script>
     </head>
 </html>
 
@@ -66,16 +66,16 @@
 		</div>
 	
 		<div class="content">
-		<input name="user" type="text" class="input user" placeholder="Nombre de usuario" />
+		<input name="user" type="text" class="input user" id="user" placeholder="Nombre de usuario" />
 		<div class="user-icon"></div>
-		<input name="password" type="password" class="input password" placeholder="Contraseña" />
+		<input name="password" type="password" class="input password" id="password" placeholder="Contraseña" />
 		<div class="pass-icon"></div>		
 		</div>
 
 		<div class="footer">
-		<input type="submit" name="login" value="Ingresar" class="button" />
+		<input type="submit" name="login" value="Ingresar" class="button" onClick="return validar()" />
 		</div>
-	
+	<div id="error"></div>
 		</form>
     </div>
 
