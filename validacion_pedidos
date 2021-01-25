@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="MX-es">
+    <head>
+        <meta charset="utf-8"/>
+		
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<title>Pedidos de Venta</title>
+	<script src= main.js> </script>
+    </head>
+
+
+<body>
+    <a id="a" href="logout.php">Salir</a>
+    
+    <h1 id="h1">Generar Pedido de Venta</h1>
+    <br>
+		
+<form name="pedidos" class="login-form" action="generarxml.php" method="post">
+		<div class="content">
+		<br>
+		<input name="numpedido" type="text" class="input indata" placeholder="Número de Pedido: 5000" required>
+		<input name="idcliente" type="text" class="input indata" placeholder="Número de Cliente: 1000" required>
+		<input name="cliente" type="text" class="input indata" placeholder="Cliente: Bimbo" required>
+		<input name="idproducto" type="text" class="input indata" placeholder="Número de Producto: 3000" required>
+		<input name="producto" type="text" class="input indata" placeholder="Producto: Mesas" required>
+		<input name="cantidad" type="text" class="input indata" placeholder="Cantidad: 10" required>
+		<input name="importe" type="text" class="input indata" placeholder="Importe: 1200.00" required>
+		</div>
+		<div class="footer">
+		<input type="submit" name="login" value="Generar XML" class="button" />
+		</div>
+	
+		<div class="form-group">
+        <label for="numpedido">No. Pedido</label>
+            <input type="text" class="form-control" id="numpedido" onkeypress="return soloNum(event)" onpaste="return false">
+        </div>
+
+		<div class="form-group">
+        <label for="idcliente">Id Cliente</label>
+            <input type="text" class="form-control" id="idcliente" onkeypress="return soloNum(event)" onpaste="return false">
+        </div>
+
+		<div class="form-group">
+        <label for="idproducto">Id Producto</label>
+            <input type="text" class="form-control" id="idproducto" onkeypress="return soloNum(event)" onpaste="return false">
+        </div>
+
+		<div class="form-group">
+        <label for="cantidad">Cantidad</label>
+            <input type="text" class="form-control" id="cantidad" onkeypress="return soloNum(event)" onpaste="return false">
+        </div>
+
+		<div class="form-group">
+        <label for="producto">Producto</label>
+		<input type="text" class="form-control" id="producto" onkeypress="return soloLetras(event)">
+        </div>
+
+        <div class="form-group">
+            <label for="cliente">Cliente</label>
+            <input type="text" class="form-control" id="cliente" onkeypress="return soloLetras(event)">
+            <br>
+            <button class="btn btn-success" onClick="return validar()">Enviar</button>
+            </div>
+
+		</form>
+		<!--input type="submit" name="generar" action="generarxml.php" value="Generar XML" class="generate" /-->
+
+</body>
+</html> 
