@@ -4,8 +4,7 @@
         <meta charset="utf-8"/>
 		<title>Pedidos de Venta</title>
 		 <link rel="stylesheet" type="text/css" href="style.css" />
-		
-<script src="main.js"></script>
+		 <script src="main.js"></script>
     </head>
 </html>
 
