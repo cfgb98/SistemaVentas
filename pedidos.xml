@@ -1,2 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<pedidos><Item><numpedido>4308</numpedido><idcliente>501</idcliente><cliente>BurgerKing</cliente><idproducto>500</idproducto><producto>Carne</producto><cantidad>1000</cantidad><importe>120000</importe></Item></pedidos>
+<pedidos><Item><numpedido>4309</numpedido><idcliente>10001</idcliente><cliente>AppleBees</cliente><idproducto>3050</idproducto><producto>Manzanas</producto><cantidad>200</cantidad><importe>500</importe></Item></pedidos>
